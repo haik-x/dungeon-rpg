@@ -23,11 +23,11 @@ public class Player : MonoBehaviour
 
         if (moveDelta.x > 0)
         {
-            transform.localScale = Vector3.one;
+            transform.localScale = new Vector3(0.4f,0.4f,1);
         }
         else if(moveDelta.x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-0.4f, 0.4f, 1);
         }
 
         transform.Translate(moveDelta * Time.deltaTime);
