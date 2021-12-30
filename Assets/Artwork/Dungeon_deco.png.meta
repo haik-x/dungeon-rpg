@@ -235,10 +235,10 @@ TextureImporter:
     second: Dungeon_deco_76
   - first:
       213: -4386976977312197154
-    second: box_0
+    second: Dungeon_deco_77
   - first:
       213: 5926426459674224557
-    second: box_1
+    second: Dungeon_deco_78
   - first:
       213: -5072672951380203889
     second: Dungeon_deco_79
@@ -259,10 +259,10 @@ TextureImporter:
     second: Dungeon_deco_84
   - first:
       213: 3874850465725740391
-    second: box_2
+    second: Dungeon_deco_85
   - first:
       213: -65202345990011321
-    second: box_3
+    second: Dungeon_deco_86
   - first:
       213: 1189695634786165508
     second: Dungeon_deco_87
@@ -358,7 +358,7 @@ TextureImporter:
     second: Dungeon_deco_117
   - first:
       213: 6910279052121753766
-    second: Dungeon_deco_118
+    second: chest_0
   - first:
       213: -8411619741437208649
     second: Dungeon_deco_119
@@ -367,7 +367,7 @@ TextureImporter:
     second: Dungeon_deco_120
   - first:
       213: 2984429788119964821
-    second: Dungeon_deco_121
+    second: chest_1
   - first:
       213: -4084711152013407352
     second: Dungeon_deco_122
@@ -509,7 +509,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -521,7 +521,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -533,7 +533,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -2161,7 +2161,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: box_0
+      name: Dungeon_deco_77
       rect:
         serializedVersion: 2
         x: 32
@@ -2182,7 +2182,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: box_1
+      name: Dungeon_deco_78
       rect:
         serializedVersion: 2
         x: 48
@@ -2329,7 +2329,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: box_2
+      name: Dungeon_deco_85
       rect:
         serializedVersion: 2
         x: 32
@@ -2350,7 +2350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: box_3
+      name: Dungeon_deco_86
       rect:
         serializedVersion: 2
         x: 48
@@ -3022,7 +3022,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon_deco_118
+      name: chest_0
       rect:
         serializedVersion: 2
         x: 96
@@ -3085,7 +3085,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon_deco_121
+      name: chest_1
       rect:
         serializedVersion: 2
         x: 192
