@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArrowDIE : MonoBehaviour
+public class ArrowDestroy : MonoBehaviour
 {
     // Start is called before the first frame update
     public float dieTime;
@@ -16,12 +16,12 @@ public class ArrowDIE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject collisionGameObject = collision.gameObject;
-        if(collisionGameObject.name!= "Player")
+        if (collisionGameObject.name != "Player")
         {
             Die();
         }
@@ -39,5 +39,4 @@ public class ArrowDIE : MonoBehaviour
         }
         Destroy(gameObject);
     }
-
 }
