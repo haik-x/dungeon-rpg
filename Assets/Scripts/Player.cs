@@ -8,13 +8,19 @@ public class Player : MonoBehaviour
     private Vector3 moveDelta;
     private RaycastHit2D hit;
     private Animator anim;
+    private static GameObject Instance;
+
+   
 
     // Start is called before the first frame update
     void Start()
     {
+
         boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        DontDestroyOnLoad(gameObject);
     }
+
 
     // Update is called once per frame
     void FixedUpdate()
@@ -44,9 +50,25 @@ public class Player : MonoBehaviour
         }
         
     }
+
+    /*void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = gameObject;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }*/
+
     void Update()
     {
         anim.SetFloat("speed", Mathf.Abs(moveDelta.x));
 
     }
+
+
 }
