@@ -15,7 +15,7 @@ public class EnemyPatrol : MonoBehaviour
     public Transform groundCheckPos;
     public LayerMask blockingLayer;
     public Collider2D bodyCollider;
-    public Transform player, shootPos;
+    public Transform shootPos;
     public GameObject bullet;
 
     void Start()
@@ -28,6 +28,9 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GameObject playerF = GameObject.Find("Player");
+        Transform player = playerF.transform;
+
         if (mustPatrol)
         {
             Patrol();

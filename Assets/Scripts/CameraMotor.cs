@@ -5,12 +5,13 @@ using UnityEngine;
 public class CameraMotor : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Transform lookAt;
     public float boundX = 015f;
     public float boundY = 0.05f;
 
     private void LateUpdate()
     {
+        GameObject playerF = GameObject.Find("Player");
+        Transform lookAt = playerF.transform;
         Vector3 delta = Vector3.zero;
 
         float deltaX = lookAt.position.x - transform.position.x;
