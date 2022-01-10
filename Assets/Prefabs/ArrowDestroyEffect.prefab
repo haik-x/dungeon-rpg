@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7484018876938304850}
   - component: {fileID: 5039299645015987486}
   - component: {fileID: 7687076202771585086}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: ArrowDestroyEffect
   m_TagString: Player
   m_Icon: {fileID: 0}

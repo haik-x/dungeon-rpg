@@ -6,6 +6,7 @@ public class ArrowDestroy : MonoBehaviour
 {
     // Start is called before the first frame update
     public float dieTime;
+    public int damage;
     public GameObject diePEffect;
 
     void Start()
@@ -13,16 +14,16 @@ public class ArrowDestroy : MonoBehaviour
         StartCoroutine(Timer());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject collisionGameObject = collision.gameObject;
         if (collisionGameObject.name != "Player")
         {
+            if (collisionGameObject.GetComponent<HealthEnemy>() != null)
+            {
+                collisionGameObject.GetComponent<HealthEnemy>().TakeDamage(damage);
+            }
             Die();
         }
     }

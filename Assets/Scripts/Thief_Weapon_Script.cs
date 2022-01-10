@@ -4,27 +4,41 @@ using UnityEngine;
 
 public class Thief_Weapon_Script : MonoBehaviour
 {
-    public float dieTime, damage;
+    // Start is called before the first frame update
+    public float dieTime;
+    public int damage;
     public GameObject diePEffect;
 
     void Start()
     {
-        StartCoroutine(CountDownTime());
+        StartCoroutine(Timer());
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        GameObject collisionGameObject = collision.gameObject;
+        if (collisionGameObject.tag != "Enemies")
+        {
+            if (collisionGameObject.GetComponent<HealthPlayer>() != null)
+            {
+                collisionGameObject.GetComponent<HealthPlayer>().TakeDamage(damage);
+            }
+            Die();
+        }
     }
-
-    IEnumerator CountDownTime()
+    IEnumerator Timer()
     {
         yield return new WaitForSeconds(dieTime);
         Die();
     }
-    
+
     void Die()
     {
+        if (diePEffect != null)
+        {
+            Instantiate(diePEffect, transform.position, Quaternion.identity);
+        }
         Destroy(gameObject);
+        //Debug.Log("GAME OVER!!!");
     }
 }

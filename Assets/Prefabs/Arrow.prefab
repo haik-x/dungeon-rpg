@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 2
+  m_Constraints: 6
 --- !u!61 &4682184605329843495
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,4 +145,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dieTime: 2
+  damage: 25
   diePEffect: {fileID: 7512634902398763120, guid: b93cb3fcd2d70d247991899195381998, type: 3}
