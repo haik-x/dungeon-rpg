@@ -3294,6 +3294,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1106208270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106208271}
+  m_Layer: 0
+  m_Name: StartPos
+  m_TagString: StartPos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1106208271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106208270}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.075, y: -1.001, z: -0.3362922}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1119948977
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,7 +3558,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   bodyCollider: {fileID: 1495331334}
-  player: {fileID: 5657099812791747911, guid: b754ff3aeaafeab438b9fc2e3f6371e7, type: 3}
   shootPos: {fileID: 1073241229}
   bullet: {fileID: 2972923466339703610, guid: 27f81137bd57a9548b19319b858d4ec5, type: 3}
 --- !u!61 &1495331334
@@ -14275,6 +14304,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e085ccfbbffc8714cba4894ad74fec37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookAt: {fileID: 5657099812791747911, guid: b754ff3aeaafeab438b9fc2e3f6371e7, type: 3}
   boundX: 15
   boundY: 0.05

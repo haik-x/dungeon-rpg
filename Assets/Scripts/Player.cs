@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -9,10 +10,8 @@ public class Player : MonoBehaviour
     private RaycastHit2D hit;
     private Animator anim;
     private static GameObject Instance;
+    private GameObject[] players;   
 
-   
-
-    // Start is called before the first frame update
     void Start()
     {
 
@@ -21,8 +20,6 @@ public class Player : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         moveDelta = Vector3.zero;
@@ -68,6 +65,32 @@ public class Player : MonoBehaviour
     {
         anim.SetFloat("speed", Mathf.Abs(moveDelta.x));
 
+    }
+    
+    
+    void FindStartPos()
+    {
+        transform.position = GameObject.FindWithTag("StartPos").transform.position;
+    }     
+ 
+    void OnEnable()
+    {
+    SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+    SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        FindStartPos();
+        players = GameObject.FindGameObjectsWithTag("Player");
+        if (players.Length > 1)
+        {
+            Destroy(players[1]);
+        }
     }
 
 
