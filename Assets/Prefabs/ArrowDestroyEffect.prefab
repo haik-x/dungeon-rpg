@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7484018876938304850}
   - component: {fileID: 5039299645015987486}
   - component: {fileID: 7687076202771585086}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: ArrowDestroyEffect
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -285,7 +285,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.09
-      minScalar: 0.09
+      minScalar: 0.07
       maxCurve:
         serializedVersion: 2
         m_Curve:
